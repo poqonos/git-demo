@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo "Today's date is: $(date)"
-      - run: echo "An issue has been opened!"
+      - run: echo "An issue has been edited!"
 
 on:
   issues:
@@ -29,4 +29,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo "Today's date is: $(date)"
-      - run: echo "An issue has been opened!"
+      - run: echo "An issue has been closed!"
