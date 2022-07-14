@@ -12,3 +12,4 @@ jobs:
       - run: bats -v
       - run: uname -a
       - run: sudo apt-get update
+      - run: echo "Today's date is: $ (date +%D)"
