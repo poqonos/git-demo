@@ -1,0 +1,32 @@
+on:
+  issues:
+    types: [opened]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Today's date is: $(date)"
+      - run: echo "An issue has been opened!"
+      
+on:
+  issues:
+    types: [edited]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Today's date is: $(date)"
+      - run: echo "An issue has been opened!"
+
+on:
+  issues:
+    types: [closed]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Today's date is: $(date)"
+      - run: echo "An issue has been opened!"
