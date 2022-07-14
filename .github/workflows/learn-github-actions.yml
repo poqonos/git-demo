@@ -11,3 +11,4 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
       - run: uname -a
+      - run: sudo apt-get update
