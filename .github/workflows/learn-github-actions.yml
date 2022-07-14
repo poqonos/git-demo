@@ -8,8 +8,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
+      - run: sudo apt-get update
+      - run: date
       - run: npm install -g bats
       - run: bats -v
       - run: uname -a
-      - run: sudo apt-get update
-      - run: date
