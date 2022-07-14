@@ -1,5 +1,5 @@
 name: manual-github-actions
-on: [workflow_dispatch]
+on: workflow_dispatch
   inputs:
     logLevel:
       description: 'Log Levle'
