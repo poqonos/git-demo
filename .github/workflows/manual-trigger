@@ -1,0 +1,9 @@
+name: manual-trigger
+  on:
+    inputs:
+      logLevel:
+        description: 'Enter Log Level'
+        required: true
+        default: 'warning'
+        tags:
+          description: 'Enter Tag name'
